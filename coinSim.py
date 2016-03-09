@@ -4,13 +4,11 @@
 #remember, when using the random fuction, you need to import it since it is not in standard library of python
 import random 
 
-#Make a single variable 'result' and use the random.randint function to set it between 1 and 2
-result = random.randint(1, 2)
-
 #Enchancment for while loop (Re-Factoring Git Assignment): 
 spin = True
 
 while spin == True:
+	result = random.randint(1, 2)
 	again = raw_input("Would you like to flip again? (y or n)\n>".lower())
 	if again == 'y':
 		#if the random int selected is 1, this will represent heads and will allow program to print heads
